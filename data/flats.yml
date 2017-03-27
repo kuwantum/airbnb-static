@@ -1,0 +1,26 @@
+alicia:
+  owner_name: Alicia Australia
+  picture: aliciahome.jpg
+  owner_picture: alicia.png
+  name: Alicia's home
+  summary: Watch out for Aligators
+  city: BBQ Cove, Australia
+  wifi: false
+
+biz:
+  owner_name: Biz Canada
+  picture: bizhome.jpg
+  owner_picture: biz.png
+  name: Biz's home
+  summary: Kind of awesome
+  city: Maple Syrup Peninsula, Canada
+  wifi: true
+
+chris:
+  owner_name: Chris England
+  picture: chrishome.jpg
+  owner_picture: chris.png
+  name: Chris's home
+  summary: Free sashimi!
+  city: Tokyo, Japan
+  wifi: true

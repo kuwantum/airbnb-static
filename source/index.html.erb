@@ -18,6 +18,17 @@
       </div>
     </div>
 
+
+<!--
+  <div class="container">
+    <div class="row">
+
+    </div>
+  </div>
+ -->
+
+
+
    <!-- <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(''images/background.jpg');">
     <div class="banner-content">
       <h1>Some Stuff</h1>
@@ -61,50 +72,21 @@
       <div class="container">
       <h2 class="text-center">Your next trip</h2>
         <div class="row">
+
+          <% data.flats.each do |owner, flat| %>
           <div class="col-xs-12 col-sm-4">
-            <!-- insert <div class="card"> -->
-            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/bizhome.jpg');">
-              <div class="card-category">Alberta</div>
+            <div class="card" style="background-image: url('<%= image_path flat.picture %>');">
+              <div class="card-category"><%= flat.city %></div>
               <div class="card-description">
-                <h2>Biz's home</h2>
-                <p>Has a large conference room</p>
+                <h2><%= flat.name %></h2>
+                <p><%= flat.summary %></p>
               </div>
-              <!-- <img class="card-user avatar" src="images/seb.jpg"> -->
-              <%= image_tag "biz.png", class: "card-user avatar" %>
-              <!-- <a class="card-link" href="#" ></a> -->
-              <%= link_to "", "#", class: "card-link" %>
+              <%= image_tag flat.owner_picture, class:"card-user avatar" %>
+              <%= link_to "#", "flats/#{owner}.html", class: "card-link" %>
             </div>
           </div>
+        <% end %>
 
-          <div class="col-xs-12 col-sm-4">
-            <!-- insert <div class="card"> -->
-            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/aliciahome.jpg');">
-              <div class="card-category">Sydney</div>
-              <div class="card-description">
-                <h2>Alicia's home</h2>
-                <p>Has a big BBQ area</p>
-              </div>
-              <!-- <img class="card-user avatar" src="images/anne.jpg"> -->
-              <%= image_tag 'alicia.png', class: 'card-user avatar' %>
-              <%= link_to "", "#", class: "card-link" %>
-            </div>
-
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <!-- insert <div class="card"> -->
-            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/chrishome.jpg');">
-              <div class="card-category">Tokyo</div>
-              <div class="card-description">
-                <h2>Chris's home</h2>
-                <p>It has 4 walls and a roof!</p>
-              </div>
-              <!-- <img class="card-user avatar" src="images/romain.jpeg"> -->
-              <%= image_tag "chris.png", class: "card-user avatar" %>
-
-              <!-- <a class="card-link" href="#" ></a> -->
-              <%= link_to "", "#", class: "card-link" %>
-            </div>
-          </div>
         </div>
       </div>
     </div>
