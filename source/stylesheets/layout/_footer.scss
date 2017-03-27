@@ -1,25 +1,25 @@
-#footer {
+.footer {
   color: $grey;
   background: $wtf;
   padding: 30px 0px;
 }
 
-#footer a {
+.footer a {
   color: $grey;
 }
 
-#footer a:hover {
-  color: $greenish;
+.footer a:hover {
+  color: $orangey;
 }
 
-#footer p {
+.footer p {
   margin-top: 17px;
 }
-#footer ul {
+.footer ul {
   margin-top: 10px;
 }
 
-#footer a {
+.footer a {
   color: $grey;
   font-size: 30px;
   letter-spacing: 20px;
