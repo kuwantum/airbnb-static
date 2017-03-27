@@ -1,21 +1,4 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Airbnb home</title>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:300,400,500,700">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- Leave those next 4 lines if you care about users using IE8 -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
 
     <!-- Your banner code -->
     <div class="banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpg');">
@@ -35,6 +18,13 @@
       </div>
     </div>
 
+   <!-- <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(''images/background.jpg');">
+    <div class="banner-content">
+      <h1>Some Stuff</h1>
+      <p>Very cool stuff, useful and smart</p>
+      <a class="btn btn-primary btn-lg">GET IT</a>
+    </div>
+  </div> -->
     <!-- Your features code -->
     <div class="container">
     <div class="text-center features padded">
@@ -73,40 +63,46 @@
         <div class="row">
           <div class="col-xs-12 col-sm-4">
             <!-- insert <div class="card"> -->
-            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
-              <div class="card-category">Paris</div>
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/bizhome.jpg');">
+              <div class="card-category">Alberta</div>
               <div class="card-description">
-                <h2>Seb's home</h2>
-                <p>Charming room with patio</p>
+                <h2>Biz's home</h2>
+                <p>Has a large conference room</p>
               </div>
-              <img class="card-user avatar" src="images/seb.jpg">
-              <a class="card-link" href="#" ></a>
+              <!-- <img class="card-user avatar" src="images/seb.jpg"> -->
+              <%= image_tag "biz.png", class: "card-user avatar" %>
+              <!-- <a class="card-link" href="#" ></a> -->
+              <%= link_to "", "#", class: "card-link" %>
             </div>
           </div>
 
           <div class="col-xs-12 col-sm-4">
             <!-- insert <div class="card"> -->
-            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
-              <div class="card-category">Brussels</div>
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/aliciahome.jpg');">
+              <div class="card-category">Sydney</div>
               <div class="card-description">
-                <h2>Anne's home</h2>
-                <p>Lovely house</p>
+                <h2>Alicia's home</h2>
+                <p>Has a big BBQ area</p>
               </div>
-              <img class="card-user avatar" src="images/anne.jpg">
-              <a class="card-link" href="#" ></a>
+              <!-- <img class="card-user avatar" src="images/anne.jpg"> -->
+              <%= image_tag 'alicia.png', class: 'card-user avatar' %>
+              <%= link_to "", "#", class: "card-link" %>
             </div>
 
           </div>
           <div class="col-xs-12 col-sm-4">
             <!-- insert <div class="card"> -->
-            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
-              <div class="card-category">London</div>
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/chrishome.jpg');">
+              <div class="card-category">Tokyo</div>
               <div class="card-description">
-                <h2>Romain's home</h2>
-                <p>Nice flat in Piccadilly</p>
+                <h2>Chris's home</h2>
+                <p>It has 4 walls and a roof!</p>
               </div>
-              <img class="card-user avatar" src="images/romain.jpeg">
-              <a class="card-link" href="#" ></a>
+              <!-- <img class="card-user avatar" src="images/romain.jpeg"> -->
+              <%= image_tag "chris.png", class: "card-user avatar" %>
+
+              <!-- <a class="card-link" href="#" ></a> -->
+              <%= link_to "", "#", class: "card-link" %>
             </div>
           </div>
         </div>
@@ -149,6 +145,4 @@
     });
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  </body>
-</html>
+
